@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" > </script>
+</head>
+<body>
+    <div id="topic" class="topic">
+        <p>Select your topic</p>
+        <ol>
+            <li>
+                <input type="radio" id="computer" name="topic">
+                <label id="computer" for="computer">Computer</label>
+            </li>
+            <li>
+                <input type="radio" id="gk" name="topic">
+                <label id="gk" for="gk">General Knowledge</label>
+            </li>
+            
+        </ol>
+        <button id="start">Start</button>
+    </div>
+    <div class="quiz-container vanish" id="quiz">
+        <div class="quiz-header">
+        <h2 id="questionEl">question text</h2>
+        <ol type="a">
+        <li>
+            <input type="radio" id="a" name="answer">
+            <label id="a_text" for="a">Option</label>
+        </li>
+
+        <li>
+            <input type="radio" id="b" name="answer">
+            <label id="b_text" for="b">Option</label>
+        </li>
+
+        <li>
+            <input type="radio" id="c" name="answer">
+            <label id="c_text" for="c">Option</label>
+        </li>
+
+        <li>
+            <input type="radio" id="d" name="answer">
+            <label id="d_text" for="d">Option</label>
+        </li>
+      </ol>
+
+      </div>
+      <button id="submit">submit</button>
+
+    </div>
+    <div id="retry"  class="reattempt vanish">
+
+        <div class="requiz-header">
+            <h2 id="requestionEl">question text</h2>
+            <ol type="a">
+            <li>
+                <input type="radio" id="a" name="reanswer">
+                <label id="rea_text" for="a">Option</label>
+            </li>
+    
+            <li>
+                <input type="radio" id="b" name="reanswer">
+                <label id="reb_text" for="b">Option</label>
+            </li>
+    
+            <li>
+                <input type="radio" id="c" name="reanswer">
+                <label id="rec_text" for="c">Option</label>
+            </li>
+    
+            <li>
+                <input type="radio" id="d" name="reanswer">
+                <label id="red_text" for="d">Option</label>
+            </li>
+          </ol>
+    
+          </div>
+          <button id="resubmit">resubmit</button>
+
+    </div>
+
+
+
+
+       </body>
+</html>
